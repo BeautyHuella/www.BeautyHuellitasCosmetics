@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Huellitas Beauty</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+      <img src="LOGCONB1.png" alt="Logo Huellitas Beauty" class="logo" />
+    <h1>Huellitas Beauty</h1>
+    <p>Cosméticos modernos a tu alcance</p>
+  </header>
+
+  <main>
+    <section class="video-presentacion">
+        <h2>Conoce Huellitas Beauty</h2>
+        <video autoplay loop muted playsinline width="100%">
+            <source src="ComercialLib.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+        </video>
+    </section>
+    <!-- Sección 1 -->
+    <section class="carrusel-section">
+      <h2>Labiales</h2>
+      <div class="carrusel-container">
+        <button class="flecha izq" onclick="moverCarrusel(this, -1)">❮</button>
+        <div class="carrusel">
+          <div class="producto">
+              <img src="gloos.png" alt="Labial Tiffany" />
+            <h3>Tiffany Libs</h3>
+            <p>Tonos llamativos y modernos.</p>
+            <button onclick="toggleModoUso(this)">Modo de uso</button>
+            <div class="modo-uso oculto">
+              <p>Aplicar directamente en los labios.</p>
+              <p>Para mejor duración, exfoliar antes.</p>
+            </div>
+            <p>S/8.00</p>
+            <a class="btn" href="https://wa.me/51930569565?text=Hola,%20quiero%20el%20Delineador%20Miau%20de%20Huellitas%20Beauty" target="_blank">Pedir por WhatsApp</a>
+          </div>
+          <div class="producto">
+              <img src="Balsamo.png" alt="Labial Fucsia" />
+            <h3>Fashion</h3>
+            <p>Bálsamo de labio</p>
+            <button onclick="toggleModoUso(this)">Modo de uso</button>
+            <div class="modo-uso oculto">
+              <p>Usar en labios limpios.</p>
+              <p>Aplicar una capa uniforme.</p>
+            </div>
+              <p>S/8.00</p>
+             <a class="btn" href="https://wa.me/51930569565?text=Hola,%20quiero%20el%20Delineador%20Miau%20de%20Huellitas%20Beauty" target="_blank">Pedir por WhatsApp</a>
+          </div>
+        </div>
+        <button class="flecha der" onclick="moverCarrusel(this, 1)">❯</button>
+      </div>
+    </section>
+
+    <!-- Sección 2 -->
+    <section class="carrusel-section">
+      <h2>Sombras</h2>
+      <div class="carrusel-container">
+        <button class="flecha izq" onclick="moverCarrusel(this, -1)">❮</button>
+        <div class="carrusel">
+          <div class="producto">
+              <img src="wish.jpeg" alt="Astro Lover" />
+            <h3>Wishes</h3>
+            <p>Rubor líquido</p>
+            <button onclick="toggleModoUso(this)">Modo de uso</button>
+            <div class="modo-uso oculto">
+              <p>Aplicar sobre el párpado con el aplicador incluido.</p>
+              <p>Dejar secar.</p>
+            </div>
+            <p>S/7.00</p>
+             <a class="btn" href="https://wa.me/51930569565?text=Hola,%20quiero%20el%20Delineador%20Miau%20de%20Huellitas%20Beauty" target="_blank">Pedir por WhatsApp</a>
+          </div>
+          <div class="producto">
+              <img src="miau.png" alt="Sombra Somb" />
+            <h3>Miau</h3>
+            <p>Delineador Líquido</p>
+            <button onclick="toggleModoUso(this)">Modo de uso</button>
+            <div class="modo-uso oculto">
+              <p>Aplicar con brocha o dedo.</p>
+              <p>Difuminar para mejor acabado.</p>
+            </div>
+            <p>S/7.00</p>
+              <a class="btn" href="https://wa.me/51930569565?text=Hola,%20quiero%20el%20Delineador%20Miau%20de%20Huellitas%20Beauty" target="_blank">Pedir por WhatsApp</a>
+          </div>
+        </div>
+        <button class="flecha der" onclick="moverCarrusel(this, 1)">❯</button>
+      </div>
+    </section>
+
+  </main>
+<!-- SECCIÓN YAPE -->
+  <section class="qr">
+    <h3>Paga con Yape o Plin</h3>
+    <img src="YapeAmor.jpeg" alt="QR Yape" class="qr-img" />
+  </section>
+  <footer>
+    <p>&copy; 2025 Huellitas Beauty - Todos los derechos reservados</p>
+    <p>Síguenos en todas nuestras redes</p>
+    <div class="redes">
+      <a href="https://www.instagram.com/_huellitasbeauty_?igsh=MXZhM2oxZjNxa2d0ag%3D%3D&utm_source=qr" target="_blank">Instagram</a>
+      <a href="https://www.tiktok.com/@huellitas.beauty?_t=ZM-8wJKNWw9OBL&_r=1" target="_blank">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
